@@ -10,6 +10,42 @@
     <Filter Include="Sources">
       <UniqueIdentifier>{c7c4020a-20ad-46ca-92f7-8bb056718ac6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressources\Fonts">
+      <UniqueIdentifier>{7fd4187f-abc8-41da-a60f-6e58a986f128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures">
+      <UniqueIdentifier>{8e68525e-b2a3-4824-9704-4a83494300f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Sounds">
+      <UniqueIdentifier>{1a283338-75aa-4ae3-aefd-f429466e5bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Bonus">
+      <UniqueIdentifier>{5e465fec-30de-4ac1-99db-ef74800cd765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Snake">
+      <UniqueIdentifier>{76abb69e-98c1-40a9-84ba-010451cf1b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Backgrounds">
+      <UniqueIdentifier>{be7c49a9-1b1d-409d-b56f-3101b23b0597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Buttons">
+      <UniqueIdentifier>{59d88e24-b5ed-485a-a3df-8a836001d839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Snake\Body">
+      <UniqueIdentifier>{ac04650d-7018-41a0-9116-353525b1dc45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Snake\Head">
+      <UniqueIdentifier>{a120ca73-08dc-4b89-9cae-c88fc09580a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Snake\Tail">
+      <UniqueIdentifier>{9860c5fb-4320-4183-b944-267a93471a8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Backgrounds\GameState">
+      <UniqueIdentifier>{51cebeae-60ce-4731-984a-37564a238fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Textures\Backgrounds\TitleState">
+      <UniqueIdentifier>{52c3684d-e7d1-4190-a404-d72820625bf5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Application.cpp">
@@ -175,5 +211,72 @@
     <None Include="Includes\Utility.inl">
       <Filter>Includes</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Ressources\Fonts\arial.ttf">
+      <Filter>Ressources\Fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Ressources\Textures\Bonus\Apple.png">
+      <Filter>Ressources\Textures\Bonus</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Backgrounds\TitleState\Background.png">
+      <Filter>Ressources\Textures\Backgrounds\TitleState</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Backgrounds\GameState\Background.png">
+      <Filter>Ressources\Textures\Backgrounds\GameState</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Body\BottomLeft.png">
+      <Filter>Ressources\Textures\Snake\Body</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Body\BottomRight.png">
+      <Filter>Ressources\Textures\Snake\Body</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Body\Horizontal.png">
+      <Filter>Ressources\Textures\Snake\Body</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Body\TopLeft.png">
+      <Filter>Ressources\Textures\Snake\Body</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Body\TopRight.png">
+      <Filter>Ressources\Textures\Snake\Body</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Body\Vertical.png">
+      <Filter>Ressources\Textures\Snake\Body</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Head\Down.png">
+      <Filter>Ressources\Textures\Snake\Head</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Head\Left.png">
+      <Filter>Ressources\Textures\Snake\Head</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Head\Right.png">
+      <Filter>Ressources\Textures\Snake\Head</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Head\Up.png">
+      <Filter>Ressources\Textures\Snake\Head</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Tail\Down.png">
+      <Filter>Ressources\Textures\Snake\Tail</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Tail\Left.png">
+      <Filter>Ressources\Textures\Snake\Tail</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Tail\Right.png">
+      <Filter>Ressources\Textures\Snake\Tail</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Snake\Tail\Up.png">
+      <Filter>Ressources\Textures\Snake\Tail</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Buttons\Normal.png">
+      <Filter>Ressources\Textures\Buttons</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Buttons\Pressed.png">
+      <Filter>Ressources\Textures\Buttons</Filter>
+    </Image>
+    <Image Include="Ressources\Textures\Buttons\Selected.png">
+      <Filter>Ressources\Textures\Buttons</Filter>
+    </Image>
   </ItemGroup>
 </Project>

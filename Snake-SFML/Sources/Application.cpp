@@ -26,10 +26,10 @@ Application::Application()
 
 	mFonts.load(Fonts::Main, 					"Ressources/Fonts/arial.ttf");
 
-	mTextures.load(Textures::TitleScreen,		"Ressources/Textures/TitleScreen.png");
-	mTextures.load(Textures::ButtonNormal,		"Ressources/Textures/ButtonNormal.png");
-	mTextures.load(Textures::ButtonSelected,	"Ressources/Textures/ButtonSelected.png");
-	mTextures.load(Textures::ButtonPressed,		"Ressources/Textures/ButtonPressed.png");
+	mTextures.load(Textures::TitleScreen,		"Ressources/Textures/Backgrounds/TitleState/Background.png");
+	mTextures.load(Textures::ButtonNormal,		"Ressources/Textures/Buttons/Normal.png");
+	mTextures.load(Textures::ButtonSelected,	"Ressources/Textures/Buttons/Selected.png");
+	mTextures.load(Textures::ButtonPressed,		"Ressources/Textures/Buttons/Pressed.png");
 
 	mStatisticsText.setFont(mFonts.get(Fonts::Main));
 	mStatisticsText.setPosition(5.f, 5.f);

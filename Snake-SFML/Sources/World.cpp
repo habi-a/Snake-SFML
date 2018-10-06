@@ -160,22 +160,22 @@ CommandQueue& World::getCommandQueue()
 
 void World::loadTextures()
 {
-	mTextures.load(Textures::HeadSnakeUp,			"Ressources/Textures/SnakeHeadUp.png");
-	mTextures.load(Textures::HeadSnakeDown,			"Ressources/Textures/SnakeHeadDown.png");
-	mTextures.load(Textures::HeadSnakeLeft,			"Ressources/Textures/SnakeHeadLeft.png");
-	mTextures.load(Textures::HeadSnakeRight,		"Ressources/Textures/SnakeHeadRight.png");
-	mTextures.load(Textures::BodySnakeHori,			"Ressources/Textures/SnakeBodyHori.png");
-	mTextures.load(Textures::BodySnakeVerti,		"Ressources/Textures/SnakeBodyVerti.png");
-	mTextures.load(Textures::BodySnakeTopLeft,		"Ressources/Textures/SnakeBodyTopLeft.png");
-	mTextures.load(Textures::BodySnakeTopRight,		"Ressources/Textures/SnakeBodyTopRight.png");
-	mTextures.load(Textures::BodySnakeBottomLeft,	"Ressources/Textures/SnakeBodyBottomLeft.png");
-	mTextures.load(Textures::BodySnakeBottomRight,	"Ressources/Textures/SnakeBodyBottomRight.png");
-	mTextures.load(Textures::TailSnakeUp,			"Ressources/Textures/SnakeTailUp.png");
-	mTextures.load(Textures::TailSnakeDown,			"Ressources/Textures/SnakeTailDown.png");
-	mTextures.load(Textures::TailSnakeLeft,			"Ressources/Textures/SnakeTailLeft.png");
-	mTextures.load(Textures::TailSnakeRight,		"Ressources/Textures/SnakeTailRight.png");
-	mTextures.load(Textures::Apple,					"Ressources/Textures/Apple.png");
-	mTextures.load(Textures::Desert,				"Ressources/Textures/Background.png");
+	mTextures.load(Textures::HeadSnakeUp,			"Ressources/Textures/Snake/Head/Up.png");
+	mTextures.load(Textures::HeadSnakeDown,			"Ressources/Textures/Snake/Head/Down.png");
+	mTextures.load(Textures::HeadSnakeLeft,			"Ressources/Textures/Snake/Head/Left.png");
+	mTextures.load(Textures::HeadSnakeRight,		"Ressources/Textures/Snake/Head/Right.png");
+	mTextures.load(Textures::BodySnakeHori,			"Ressources/Textures/Snake/Body/Horizontal.png");
+	mTextures.load(Textures::BodySnakeVerti,		"Ressources/Textures/Snake/Body/Vertical.png");
+	mTextures.load(Textures::BodySnakeTopLeft,		"Ressources/Textures/Snake/Body/TopLeft.png");
+	mTextures.load(Textures::BodySnakeTopRight,		"Ressources/Textures/Snake/Body/TopRight.png");
+	mTextures.load(Textures::BodySnakeBottomLeft,	"Ressources/Textures/Snake/Body/BottomLeft.png");
+	mTextures.load(Textures::BodySnakeBottomRight,	"Ressources/Textures/Snake/Body/BottomRight.png");
+	mTextures.load(Textures::TailSnakeUp,			"Ressources/Textures/Snake/Tail/Up.png");
+	mTextures.load(Textures::TailSnakeDown,			"Ressources/Textures/Snake/Tail/Down.png");
+	mTextures.load(Textures::TailSnakeLeft,			"Ressources/Textures/Snake/Tail/Left.png");
+	mTextures.load(Textures::TailSnakeRight,		"Ressources/Textures/Snake/Tail/Right.png");
+	mTextures.load(Textures::Apple,					"Ressources/Textures/Bonus/Apple.png");
+	mTextures.load(Textures::Desert,				"Ressources/Textures/Backgrounds/GameState/Background.png");
 }
 
 void World::buildScene()

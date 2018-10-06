@@ -77,6 +77,31 @@
     <None Include="Includes\ResourceHolder.inl" />
     <None Include="Includes\Utility.inl" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Ressources\Fonts\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Ressources\Textures\Backgrounds\GameState\Background.png" />
+    <Image Include="Ressources\Textures\Backgrounds\TitleState\Background.png" />
+    <Image Include="Ressources\Textures\Bonus\Apple.png" />
+    <Image Include="Ressources\Textures\Buttons\Normal.png" />
+    <Image Include="Ressources\Textures\Buttons\Pressed.png" />
+    <Image Include="Ressources\Textures\Buttons\Selected.png" />
+    <Image Include="Ressources\Textures\Snake\Body\BottomLeft.png" />
+    <Image Include="Ressources\Textures\Snake\Body\BottomRight.png" />
+    <Image Include="Ressources\Textures\Snake\Body\Horizontal.png" />
+    <Image Include="Ressources\Textures\Snake\Body\TopLeft.png" />
+    <Image Include="Ressources\Textures\Snake\Body\TopRight.png" />
+    <Image Include="Ressources\Textures\Snake\Body\Vertical.png" />
+    <Image Include="Ressources\Textures\Snake\Head\Down.png" />
+    <Image Include="Ressources\Textures\Snake\Head\Left.png" />
+    <Image Include="Ressources\Textures\Snake\Head\Right.png" />
+    <Image Include="Ressources\Textures\Snake\Head\Up.png" />
+    <Image Include="Ressources\Textures\Snake\Tail\Down.png" />
+    <Image Include="Ressources\Textures\Snake\Tail\Left.png" />
+    <Image Include="Ressources\Textures\Snake\Tail\Right.png" />
+    <Image Include="Ressources\Textures\Snake\Tail\Up.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{F67DF0D8-95A3-4AE7-832F-3CAFC7261BC9}</ProjectGuid>
