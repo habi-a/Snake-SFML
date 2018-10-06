@@ -7,6 +7,7 @@ namespace sf
 {
 	class Texture;
 	class Font;
+	class SoundBuffer;
 }
 
 namespace Textures
@@ -44,11 +45,31 @@ namespace Fonts
 	};
 }
 
+namespace Musics
+{
+	enum ID
+	{
+		TitleTheme
+	};
+}
+
+namespace Sounds
+{
+	enum ID
+	{
+		Button,
+		SnakeMove,
+		SnakeEatApple,
+		SnakeCollision
+	};
+}
+
 // Forward declaration and a few type definitions
 template <typename Resource, typename Identifier>
 class ResourceHolder;
 
 typedef ResourceHolder<sf::Texture, Textures::ID>	TextureHolder;
 typedef ResourceHolder<sf::Font, Fonts::ID>			FontHolder;
+typedef ResourceHolder<sf::SoundBuffer, Sounds::ID>		SoundsHolder;
 
 #endif // SNAKESFML_RESOURCEIDENTIFIERS_HPP

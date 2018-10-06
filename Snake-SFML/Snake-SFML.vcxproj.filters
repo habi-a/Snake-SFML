@@ -46,6 +46,18 @@
     <Filter Include="Ressources\Textures\Backgrounds\TitleState">
       <UniqueIdentifier>{52c3684d-e7d1-4190-a404-d72820625bf5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressources\Sounds\Snake">
+      <UniqueIdentifier>{51e1f7fa-92ab-49bd-a6d0-88d8500dd928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Musics">
+      <UniqueIdentifier>{f833899b-5511-4015-a796-97542e7a1bf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Sounds\Button">
+      <UniqueIdentifier>{9c9e9132-019e-4087-9904-1ed368e195a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressources\Musics\MenuState">
+      <UniqueIdentifier>{b2633b19-f6b2-4356-9ca6-1bcc6a8d81a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Application.cpp">
@@ -118,6 +130,15 @@
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="Sources\World.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\MusicPlayer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\SoundPlayer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\SoundNode.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -203,6 +224,15 @@
     <ClInclude Include="Includes\World.hpp">
       <Filter>Includes</Filter>
     </ClInclude>
+    <ClInclude Include="Includes\MusicPlayer.hpp">
+      <Filter>Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\SoundPlayer.hpp">
+      <Filter>Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\SoundNode.hpp">
+      <Filter>Includes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Includes\ResourceHolder.inl">
@@ -278,5 +308,22 @@
     <Image Include="Ressources\Textures\Buttons\Selected.png">
       <Filter>Ressources\Textures\Buttons</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Ressources\Sounds\Snake\Eat.wav">
+      <Filter>Ressources\Sounds\Snake</Filter>
+    </Media>
+    <Media Include="Ressources\Sounds\Snake\Move.wav">
+      <Filter>Ressources\Sounds\Snake</Filter>
+    </Media>
+    <Media Include="Ressources\Sounds\Snake\Collision.wav">
+      <Filter>Ressources\Sounds\Snake</Filter>
+    </Media>
+    <Media Include="Ressources\Sounds\Button\Move.wav">
+      <Filter>Ressources\Sounds\Button</Filter>
+    </Media>
+    <Media Include="Ressources\Musics\MenuState\SnakeTheme.wav">
+      <Filter>Ressources\Musics\MenuState</Filter>
+    </Media>
   </ItemGroup>
 </Project>

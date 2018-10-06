@@ -1,5 +1,6 @@
 #include "../Includes/Button.hpp"
 #include "../Includes/Utility.hpp"
+#include "../Includes/SoundPlayer.hpp"
 
 #include <SFML/Window/Event.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
@@ -9,14 +10,15 @@
 namespace GUI
 {
 
-Button::Button(const FontHolder& fonts, const TextureHolder& textures)
+Button::Button(State::Context context)
 : mCallback()
-, mNormalTexture(textures.get(Textures::ButtonNormal))
-, mSelectedTexture(textures.get(Textures::ButtonSelected))
-, mPressedTexture(textures.get(Textures::ButtonPressed))
+, mNormalTexture(context.textures->get(Textures::ButtonNormal))
+, mSelectedTexture(context.textures->get(Textures::ButtonSelected))
+, mPressedTexture(context.textures->get(Textures::ButtonPressed))
 , mSprite()
-, mText("", fonts.get(Fonts::Main), 16)
+, mText("", context.fonts->get(Fonts::Main), 16)
 , mIsToggle(false)
+, mSounds(*context.sounds)
 {
 	mSprite.setTexture(mNormalTexture);
 
@@ -56,6 +58,7 @@ void Button::deselect()
 {
 	Component::deselect();
 
+	mSounds.play(Sounds::Button);
 	mSprite.setTexture(mNormalTexture);
 }
 
@@ -73,6 +76,8 @@ void Button::activate()
     // If we are not a toggle then deactivate the button since we are just momentarily activated.
 	if (!mIsToggle)
 		deactivate();
+
+	mSounds.play(Sounds::Button);
 }
 
 void Button::deactivate()

@@ -9,6 +9,7 @@
 #include "Snake.hpp"
 #include "CommandQueue.hpp"
 #include "Command.hpp"
+#include "SoundPlayer.hpp"
 
 #include <SFML/System/NonCopyable.hpp>
 #include <SFML/Graphics/View.hpp>
@@ -27,7 +28,7 @@ namespace sf
 class World : private sf::NonCopyable
 {
 	public:
-		explicit							World(sf::RenderWindow& window);
+		explicit							World(sf::RenderWindow& window, FontHolder& fonts, SoundPlayer& sounds);
 		void								update(sf::Time dt);
 		void								draw();		
 		unsigned int						getSnakeScore() const;
@@ -60,14 +61,16 @@ class World : private sf::NonCopyable
 		sf::RenderWindow&					mWindow;
 		unsigned int						mTileSize;
 		TextureHolder						mTextures;
+		FontHolder							&mFonts;
+		SoundPlayer							&mSounds;
 		SceneNode							mSceneGraph;
 		std::array<SceneNode*, LayerCount>	mSceneLayers;
 		CommandQueue						mCommandQueue;
 		sf::FloatRect						mWorldBounds;
 		sf::Vector2f						mSpawnPosition;
-		Snake*								mPlayerSnake;
+		Snake								*mPlayerSnake;
 		std::vector<Snake *>				mBodySnake;
-		Bonus*								mBonus;
+		Bonus								*mBonus;
 };
 
 #endif // SNAKESFML_WORLD_HPP

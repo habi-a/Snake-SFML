@@ -32,11 +32,14 @@
     <ClCompile Include="Sources\Label.cpp" />
     <ClCompile Include="Sources\Main.cpp" />
     <ClCompile Include="Sources\MenuState.cpp" />
+    <ClCompile Include="Sources\MusicPlayer.cpp" />
     <ClCompile Include="Sources\PauseState.cpp" />
     <ClCompile Include="Sources\Player.cpp" />
     <ClCompile Include="Sources\SceneNode.cpp" />
     <ClCompile Include="Sources\SettingsState.cpp" />
     <ClCompile Include="Sources\Snake.cpp" />
+    <ClCompile Include="Sources\SoundNode.cpp" />
+    <ClCompile Include="Sources\SoundPlayer.cpp" />
     <ClCompile Include="Sources\SpriteNode.cpp" />
     <ClCompile Include="Sources\State.cpp" />
     <ClCompile Include="Sources\StateStack.cpp" />
@@ -58,6 +61,7 @@
     <ClInclude Include="Includes\GameState.hpp" />
     <ClInclude Include="Includes\Label.hpp" />
     <ClInclude Include="Includes\MenuState.hpp" />
+    <ClInclude Include="Includes\MusicPlayer.hpp" />
     <ClInclude Include="Includes\PauseState.hpp" />
     <ClInclude Include="Includes\Player.hpp" />
     <ClInclude Include="Includes\ResourceHolder.hpp" />
@@ -65,6 +69,8 @@
     <ClInclude Include="Includes\SceneNode.hpp" />
     <ClInclude Include="Includes\SettingsState.hpp" />
     <ClInclude Include="Includes\Snake.hpp" />
+    <ClInclude Include="Includes\SoundNode.hpp" />
+    <ClInclude Include="Includes\SoundPlayer.hpp" />
     <ClInclude Include="Includes\SpriteNode.hpp" />
     <ClInclude Include="Includes\State.hpp" />
     <ClInclude Include="Includes\StateIdentifiers.hpp" />
@@ -101,6 +107,13 @@
     <Image Include="Ressources\Textures\Snake\Tail\Left.png" />
     <Image Include="Ressources\Textures\Snake\Tail\Right.png" />
     <Image Include="Ressources\Textures\Snake\Tail\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Ressources\Musics\MenuState\SnakeTheme.wav" />
+    <Media Include="Ressources\Sounds\Button\Move.wav" />
+    <Media Include="Ressources\Sounds\Snake\Collision.wav" />
+    <Media Include="Ressources\Sounds\Snake\Eat.wav" />
+    <Media Include="Ressources\Sounds\Snake\Move.wav" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

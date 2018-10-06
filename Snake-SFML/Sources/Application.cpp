@@ -17,7 +17,9 @@ Application::Application()
 , mTextures()
 , mFonts()
 , mPlayer()
-, mStateStack(State::Context(mWindow, mTextures, mFonts, mPlayer))
+, mMusic()
+, mSounds()
+, mStateStack(State::Context(mWindow, mTextures, mFonts, mPlayer, mMusic, mSounds))
 , mStatisticsText()
 , mStatisticsUpdateTime()
 , mStatisticsNumFrames(0)
@@ -48,10 +50,10 @@ void Application::run()
 	{
 		sf::Time dt = clock.restart();
 		timeSinceLastUpdate += dt;
+
 		while (timeSinceLastUpdate > TimePerFrame)
 		{
 			timeSinceLastUpdate -= TimePerFrame;
-
 			processInput();
 			update(TimePerFrame);
 
@@ -59,7 +61,6 @@ void Application::run()
 			if (mStateStack.isEmpty())
 				mWindow.close();
 		}
-
 		updateStatistics(dt);
 		render();
 	}

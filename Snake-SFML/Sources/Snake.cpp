@@ -45,6 +45,16 @@ void Snake::setScore(const unsigned int score)
 	mScore = score;
 }
 
+bool Snake::isChangingDirection() const
+{
+	return mIsChangingDirection;
+}
+
+void Snake::setIsChangingDirection(bool isChangingDirection)
+{
+	mIsChangingDirection = isChangingDirection;
+}
+
 void Snake::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	target.draw(mSprite, states);

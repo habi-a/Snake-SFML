@@ -11,7 +11,8 @@ namespace Category
 		Scene			= 1 << 0,
 		PlayerSnake		= 1 << 1,
 		BodySnake		= 1 << 2,
-		Apple			= 1 << 3
+		Apple			= 1 << 3,
+		Sounds			= 1 << 4,
 	};
 }
 

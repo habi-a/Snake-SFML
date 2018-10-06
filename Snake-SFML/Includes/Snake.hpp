@@ -20,6 +20,8 @@ class Snake : public Entity
 	public:
 								Snake(Type type, const TextureHolder& textures);
 		void					adaptSnakePosition(unsigned int sizeTile);
+		bool					isChangingDirection() const;
+		void					setIsChangingDirection(bool isChangingDirection);
 		static bool				canChangeDirection(Direction direction_one, Direction direction_two);
 		sf::Sprite				&getSprite();
 		virtual unsigned int	getCategory() const;
@@ -30,6 +32,7 @@ class Snake : public Entity
 		virtual void			drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const;
 
 	private:
+		bool					mIsChangingDirection;
 		Type					mType;
 		sf::Sprite				mSprite;
 		unsigned int			mScore;

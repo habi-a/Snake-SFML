@@ -22,7 +22,10 @@ struct SnakeMover
 		{
 			snake.setDirection(mDirection);
 			if (oldDirection != snake.getDirection())
+			{
+				snake.setIsChangingDirection(true);
 				snake.adaptSnakePosition(32);
+			}
 		}
 		snake.accelerate(mSpeed);
 	}

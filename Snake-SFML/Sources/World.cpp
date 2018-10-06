@@ -1,16 +1,18 @@
 #include "../Includes/World.hpp"
+#include "../Includes/SoundNode.hpp"
 
 #include <SFML/Graphics/RenderWindow.hpp>
 
 #include <algorithm>
 #include <cmath>
-#include <iostream>
 
 
-World::World(sf::RenderWindow& window)
+World::World(sf::RenderWindow& window, FontHolder& fonts, SoundPlayer& sounds)
 : mWindow(window)
 , mTileSize(32)
-, mTextures() 
+, mTextures()
+, mFonts(fonts)
+, mSounds(sounds)
 , mSceneGraph()
 , mSceneLayers()
 , mWorldBounds(0.f, 0.f, (float)mWindow.getSize().x, (float)mWindow.getSize().y)
@@ -28,9 +30,17 @@ void World::update(sf::Time dt)
 	while (!mCommandQueue.isEmpty())
 		mSceneGraph.onCommand(mCommandQueue.pop(), dt);
 
+	// Check if Snake is changing of direction
+	if (mPlayerSnake->isChangingDirection())
+	{
+		mSounds.play(Sounds::SnakeMove);
+		mPlayerSnake->setIsChangingDirection(false);
+	}
+
 	// Check if Snake is eating the Apple
 	if (snakeEatApple())
 	{
+		mSounds.play(Sounds::SnakeEatApple);
 		mBonus->teleportBonus(mWindow.getSize(), mWorldBounds, mTileSize);
 		mPlayerSnake->setScore(mPlayerSnake->getScore() + 1);
 		pushSnakeBody(Snake::Body, mPlayerSnake->getPosition());
@@ -260,14 +270,22 @@ bool World::snakeEatItself() const
 	{
 		if (Entity::roundPosition(mPlayerSnake->getPosition().x, mTileSize) == Entity::roundPosition(partOfBody->getPosition().x, mTileSize)
 			&& Entity::roundPosition(mPlayerSnake->getPosition().y, mTileSize) == Entity::roundPosition(partOfBody->getPosition().y, mTileSize))
+		{
+			mSounds.play(Sounds::SnakeEatApple);
 			return true;
+		}
 	}
 	return false;
 }
 
 bool World::snakeIsOutWorld() const
 {
-	return !mWorldBounds.contains(mPlayerSnake->getPosition());
+	if (!mWorldBounds.contains(mPlayerSnake->getPosition()))
+	{
+		mSounds.play(Sounds::SnakeCollision);
+		return true;
+	}
+	return false;
 }
 
 bool World::snakeLoose() const

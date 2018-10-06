@@ -1,11 +1,12 @@
 #include "../Includes/GameState.hpp"
-
+#include "../Includes/MusicPlayer.hpp"
 
 GameState::GameState(StateStack& stack, Context context)
 : State(stack, context)
-, mWorld(*context.window)
+, mWorld(*context.window, *context.fonts, *context.sounds)
 , mPlayer(*context.player)
 {
+	context.musics->stop();
 }
 
 void GameState::draw()
