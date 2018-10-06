@@ -18,6 +18,65 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Application.cpp" />
+    <ClCompile Include="Sources\Bonus.cpp" />
+    <ClCompile Include="Sources\Button.cpp" />
+    <ClCompile Include="Sources\Command.cpp" />
+    <ClCompile Include="Sources\CommandQueue.cpp" />
+    <ClCompile Include="Sources\Component.cpp" />
+    <ClCompile Include="Sources\Container.cpp" />
+    <ClCompile Include="Sources\Entity.cpp" />
+    <ClCompile Include="Sources\GameOverState.cpp" />
+    <ClCompile Include="Sources\GameState.cpp" />
+    <ClCompile Include="Sources\Label.cpp" />
+    <ClCompile Include="Sources\Main.cpp" />
+    <ClCompile Include="Sources\MenuState.cpp" />
+    <ClCompile Include="Sources\PauseState.cpp" />
+    <ClCompile Include="Sources\Player.cpp" />
+    <ClCompile Include="Sources\SceneNode.cpp" />
+    <ClCompile Include="Sources\SettingsState.cpp" />
+    <ClCompile Include="Sources\Snake.cpp" />
+    <ClCompile Include="Sources\SpriteNode.cpp" />
+    <ClCompile Include="Sources\State.cpp" />
+    <ClCompile Include="Sources\StateStack.cpp" />
+    <ClCompile Include="Sources\TitleState.cpp" />
+    <ClCompile Include="Sources\Utility.cpp" />
+    <ClCompile Include="Sources\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\Application.hpp" />
+    <ClInclude Include="Includes\Bonus.hpp" />
+    <ClInclude Include="Includes\Button.hpp" />
+    <ClInclude Include="Includes\Category.hpp" />
+    <ClInclude Include="Includes\Command.hpp" />
+    <ClInclude Include="Includes\CommandQueue.hpp" />
+    <ClInclude Include="Includes\Component.hpp" />
+    <ClInclude Include="Includes\Container.hpp" />
+    <ClInclude Include="Includes\Entity.hpp" />
+    <ClInclude Include="Includes\GameOverState.hpp" />
+    <ClInclude Include="Includes\GameState.hpp" />
+    <ClInclude Include="Includes\Label.hpp" />
+    <ClInclude Include="Includes\MenuState.hpp" />
+    <ClInclude Include="Includes\PauseState.hpp" />
+    <ClInclude Include="Includes\Player.hpp" />
+    <ClInclude Include="Includes\ResourceHolder.hpp" />
+    <ClInclude Include="Includes\ResourceIdentifiers.hpp" />
+    <ClInclude Include="Includes\SceneNode.hpp" />
+    <ClInclude Include="Includes\SettingsState.hpp" />
+    <ClInclude Include="Includes\Snake.hpp" />
+    <ClInclude Include="Includes\SpriteNode.hpp" />
+    <ClInclude Include="Includes\State.hpp" />
+    <ClInclude Include="Includes\StateIdentifiers.hpp" />
+    <ClInclude Include="Includes\StateStack.hpp" />
+    <ClInclude Include="Includes\TitleState.hpp" />
+    <ClInclude Include="Includes\Utility.hpp" />
+    <ClInclude Include="Includes\World.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Includes\ResourceHolder.inl" />
+    <None Include="Includes\Utility.inl" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{F67DF0D8-95A3-4AE7-832F-3CAFC7261BC9}</ProjectGuid>
@@ -132,93 +191,6 @@
       <AdditionalDependencies>sfml-audio.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Image Include="Ressources\Textures\Apple.png" />
-    <Image Include="Ressources\Textures\background.png" />
-    <Image Include="Ressources\Textures\ButtonNormal.png" />
-    <Image Include="Ressources\Textures\ButtonPressed.png" />
-    <Image Include="Ressources\Textures\ButtonSelected.png" />
-    <Image Include="Ressources\Textures\Desert.png" />
-    <Image Include="Ressources\Textures\Eagle.png" />
-    <Image Include="Ressources\Textures\Raptor.png" />
-    <Image Include="Ressources\Textures\SnakeBodyBottomLeft.png" />
-    <Image Include="Ressources\Textures\SnakeBodyBottomRight.png" />
-    <Image Include="Ressources\Textures\SnakeBodyHori.png" />
-    <Image Include="Ressources\Textures\SnakeBodyTopLeft.png" />
-    <Image Include="Ressources\Textures\SnakeBodyTopRight.png" />
-    <Image Include="Ressources\Textures\SnakeBodyVerti.png" />
-    <Image Include="Ressources\Textures\SnakeHeadDown.png" />
-    <Image Include="Ressources\Textures\SnakeHeadLeft.png" />
-    <Image Include="Ressources\Textures\SnakeHeadRight.png" />
-    <Image Include="Ressources\Textures\SnakeHeadUp.png" />
-    <Image Include="Ressources\Textures\SnakeTailDown.png" />
-    <Image Include="Ressources\Textures\SnakeTailLeft.png" />
-    <Image Include="Ressources\Textures\SnakeTailRight.png" />
-    <Image Include="Ressources\Textures\SnakeTailUp.png" />
-    <Image Include="Ressources\Textures\TitleScreen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="Ressource\Font\arial.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Include\Bonus.hpp" />
-    <ClInclude Include="Include\GameOverState.hpp" />
-    <ClInclude Include="Include\Snake.hpp" />
-    <ClInclude Include="Include\Application.hpp" />
-    <ClInclude Include="Include\Button.hpp" />
-    <ClInclude Include="Include\Category.hpp" />
-    <ClInclude Include="Include\Command.hpp" />
-    <ClInclude Include="Include\CommandQueue.hpp" />
-    <ClInclude Include="Include\Component.hpp" />
-    <ClInclude Include="Include\Container.hpp" />
-    <ClInclude Include="Include\Entity.hpp" />
-    <ClInclude Include="Include\GameState.hpp" />
-    <ClInclude Include="Include\Label.hpp" />
-    <ClInclude Include="Include\MenuState.hpp" />
-    <ClInclude Include="Include\PauseState.hpp" />
-    <ClInclude Include="Include\Player.hpp" />
-    <ClInclude Include="Include\ResourceHolder.hpp" />
-    <ClInclude Include="Include\ResourceIdentifiers.hpp" />
-    <ClInclude Include="Include\SceneNode.hpp" />
-    <ClInclude Include="Include\SettingsState.hpp" />
-    <ClInclude Include="Include\SpriteNode.hpp" />
-    <ClInclude Include="Include\State.hpp" />
-    <ClInclude Include="Include\StateIdentifiers.hpp" />
-    <ClInclude Include="Include\StateStack.hpp" />
-    <ClInclude Include="Include\TitleState.hpp" />
-    <ClInclude Include="Include\Utility.hpp" />
-    <ClInclude Include="Include\World.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Include\ResourceHolder.inl" />
-    <None Include="Include\Utility.inl" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Source\Bonus.cpp" />
-    <ClCompile Include="Source\GameOverState.cpp" />
-    <ClCompile Include="Source\Snake.cpp" />
-    <ClCompile Include="Source\Application.cpp" />
-    <ClCompile Include="Source\Button.cpp" />
-    <ClCompile Include="Source\Command.cpp" />
-    <ClCompile Include="Source\CommandQueue.cpp" />
-    <ClCompile Include="Source\Component.cpp" />
-    <ClCompile Include="Source\Container.cpp" />
-    <ClCompile Include="Source\Entity.cpp" />
-    <ClCompile Include="Source\GameState.cpp" />
-    <ClCompile Include="Source\Label.cpp" />
-    <ClCompile Include="Source\Main.cpp" />
-    <ClCompile Include="Source\MenuState.cpp" />
-    <ClCompile Include="Source\PauseState.cpp" />
-    <ClCompile Include="Source\Player.cpp" />
-    <ClCompile Include="Source\SceneNode.cpp" />
-    <ClCompile Include="Source\SettingsState.cpp" />
-    <ClCompile Include="Source\SpriteNode.cpp" />
-    <ClCompile Include="Source\State.cpp" />
-    <ClCompile Include="Source\StateStack.cpp" />
-    <ClCompile Include="Source\TitleState.cpp" />
-    <ClCompile Include="Source\Utility.cpp" />
-    <ClCompile Include="Source\World.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

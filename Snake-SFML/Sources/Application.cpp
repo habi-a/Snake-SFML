@@ -1,13 +1,13 @@
-#include "../Include/Application.hpp"
-#include "../Include/Utility.hpp"
-#include "../Include/State.hpp"
-#include "../Include/StateIdentifiers.hpp"
-#include "../Include/TitleState.hpp"
-#include "../Include/GameState.hpp"
-#include "../Include/GameOverState.hpp"
-#include "../Include/MenuState.hpp"
-#include "../Include/PauseState.hpp"
-#include "../Include/SettingsState.hpp"
+#include "../Includes/Application.hpp"
+#include "../Includes/Utility.hpp"
+#include "../Includes/State.hpp"
+#include "../Includes/StateIdentifiers.hpp"
+#include "../Includes/TitleState.hpp"
+#include "../Includes/GameState.hpp"
+#include "../Includes/GameOverState.hpp"
+#include "../Includes/MenuState.hpp"
+#include "../Includes/PauseState.hpp"
+#include "../Includes/SettingsState.hpp"
 
 
 const sf::Time Application::TimePerFrame = sf::seconds(1.f/15.f);

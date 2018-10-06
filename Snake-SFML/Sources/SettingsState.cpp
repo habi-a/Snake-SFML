@@ -1,6 +1,6 @@
-#include "../Include/SettingsState.hpp"
-#include "../Include/ResourceHolder.hpp"
-#include "../Include/Utility.hpp"
+#include "../Includes/SettingsState.hpp"
+#include "../Includes/ResourceHolder.hpp"
+#include "../Includes/Utility.hpp"
 
 #include <SFML/Graphics/RenderWindow.hpp>
 

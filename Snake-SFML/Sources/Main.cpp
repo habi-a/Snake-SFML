@@ -1,4 +1,4 @@
-#include "../Include/Application.hpp"
+#include "../Includes/Application.hpp"
 
 #include <ctime>
 #include <iostream>

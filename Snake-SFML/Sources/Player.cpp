@@ -1,6 +1,6 @@
-#include "../Include/Player.hpp"
-#include "../Include/CommandQueue.hpp"
-#include "../Include/Snake.hpp"
+#include "../Includes/Player.hpp"
+#include "../Includes/CommandQueue.hpp"
+#include "../Includes/Snake.hpp"
 
 #include <map>
 #include <string>

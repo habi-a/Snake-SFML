@@ -1,6 +1,6 @@
-#include "../Include/Snake.hpp"
-#include "../Include/ResourceHolder.hpp"
-#include "../Include/Utility.hpp"
+#include "../Includes/Snake.hpp"
+#include "../Includes/ResourceHolder.hpp"
+#include "../Includes/Utility.hpp"
 
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Graphics/RenderStates.hpp>

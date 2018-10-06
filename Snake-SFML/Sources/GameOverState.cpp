@@ -1,8 +1,8 @@
-#include "../Include/GameOverState.hpp"
-#include "../Include/GameState.hpp"
-#include "../Include/Utility.hpp"
-#include "../Include/Player.hpp"
-#include "../Include/ResourceHolder.hpp"
+#include "../Includes/GameOverState.hpp"
+#include "../Includes/GameState.hpp"
+#include "../Includes/Utility.hpp"
+#include "../Includes/Player.hpp"
+#include "../Includes/ResourceHolder.hpp"
 
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>

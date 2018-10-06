@@ -1,4 +1,4 @@
-#include "../Include/Utility.hpp"
+#include "../Includes/Utility.hpp"
 
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Text.hpp>
