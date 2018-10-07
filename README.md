@@ -42,7 +42,7 @@ This is a very basic classic 2D snake game made with the SFML C++ game library.
   * Then Run and enjoy
   
 ### Second Method Makefile
-(Build will work, but the application is untested)
+** BUILD DON'T WORK, SEE [ISSUE#1]()**
 
  * Download source code
  * cd to directory  
@@ -54,7 +54,7 @@ This is a very basic classic 2D snake game made with the SFML C++ game library.
   ```
    $ make
   ```
- * the exectable `bin/game` should apear. The directory will be created if doesn't exist.
+ * the exectable `snake-sfmlout should apear. The directory will be created if doesn't exist.
  * Run and enjoy
 
 
