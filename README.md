@@ -1,5 +1,5 @@
 # Snake-SFML
-![Language (C++)](https://img.shields.io/badge/powered_by-C++-brightgreen.svg?style=flat-square)
+![Language (C++)](https://img.shields.io/badge/powered_by-C++-brightgreen.svg?style=flat-square) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 This is a very basic classic 2D snake game made with the SFML C++ game library.
 
@@ -42,10 +42,10 @@ This is a very basic classic 2D snake game made with the SFML C++ game library.
   * Then Run and enjoy
   
 ### Second Method Makefile
-** BUILD DON'T WORK, SEE [ISSUE#1]()**
+**BUILD DON'T WORK, SEE [ISSUE#1](https://github.com/habi-a/Snake-SFML/issues/1)**
 
  * Download source code
- * cd to directory  
+ * cd to directory
   ```
    $ cd sfml-snake
   ```
