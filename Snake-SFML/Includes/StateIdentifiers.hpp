@@ -4,17 +4,17 @@
 
 namespace States
 {
-	enum ID
-	{
-		None,
-		Title,
-		Menu,
-		Game,
-		GameOver,
-		Loading,
-		Pause,
-		Settings
-	};
+    enum ID
+    {
+        None,
+        Title,
+        Menu,
+        Game,
+        GameOver,
+        Loading,
+        Pause,
+        Settings
+    };
 }
 
 #endif // SNAKESFML_STATEIDENTIFIERS_HPP

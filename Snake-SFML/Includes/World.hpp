@@ -22,55 +22,55 @@
 // Forward declaration
 namespace sf
 {
-	class RenderWindow;
+    class RenderWindow;
 }
 
 class World : private sf::NonCopyable
 {
-	public:
-		explicit							World(sf::RenderWindow& window, FontHolder& fonts, SoundPlayer& sounds);
-		void								update(sf::Time dt);
-		void								draw();		
-		unsigned int						getSnakeScore() const;
-		CommandQueue&						getCommandQueue();
-		bool								snakeLoose() const;
+    public:
+        explicit                            World(sf::RenderWindow& window, FontHolder& fonts, SoundPlayer& sounds);
+        void                                update(sf::Time dt);
+        void                                draw();        
+        unsigned int                        getSnakeScore() const;
+        CommandQueue                        &getCommandQueue();
+        bool                                snakeLoose() const;
 
-	private:
-		void								updateSnakeHead();
-		void								updateSnakeBody();
-		void								updateSnakeTail();
-		void								updateSnakeSprite();
-		void								snakeBodyFollowHead();
-		void								pushSnakeBody(Snake::Type type, sf::Vector2f spawnPosition);
-		void								pushSnakeBody(Snake::Type type, float positionX, float postionY);
-		void								loadTextures();
-		void								buildScene();
-		bool								snakeEatApple() const;
-		bool								snakeEatItself() const;
-		bool								snakeIsOutWorld() const;
+    private:
+        void                                updateSnakeHead();
+        void                                updateSnakeBody();
+        void                                updateSnakeTail();
+        void                                updateSnakeSprite();
+        void                                snakeBodyFollowHead();
+        void                                pushSnakeBody(Snake::Type type, sf::Vector2f spawnPosition);
+        void                                pushSnakeBody(Snake::Type type, float positionX, float postionY);
+        void                                loadTextures();
+        void                                buildScene();
+        bool                                snakeEatApple() const;
+        bool                                snakeEatItself() const;
+        bool                                snakeIsOutWorld() const;
 
-	private:
-		enum Layer
-		{
-			Background,
-			Ground,
-			LayerCount
-		};
+    private:
+        enum Layer
+        {
+            Background,
+            Ground,
+            LayerCount
+        };
 
-	private:
-		sf::RenderWindow&					mWindow;
-		unsigned int						mTileSize;
-		TextureHolder						mTextures;
-		FontHolder							&mFonts;
-		SoundPlayer							&mSounds;
-		SceneNode							mSceneGraph;
-		std::array<SceneNode*, LayerCount>	mSceneLayers;
-		CommandQueue						mCommandQueue;
-		sf::FloatRect						mWorldBounds;
-		sf::Vector2f						mSpawnPosition;
-		Snake								*mPlayerSnake;
-		std::vector<Snake *>				mBodySnake;
-		Bonus								*mBonus;
+    private:
+        sf::RenderWindow                    &mWindow;
+        unsigned int                        mTileSize;
+        TextureHolder                       mTextures;
+        FontHolder                          &mFonts;
+        SoundPlayer                         &mSounds;
+        SceneNode                           mSceneGraph;
+        std::array<SceneNode*, LayerCount>  mSceneLayers;
+        CommandQueue                        mCommandQueue;
+        sf::FloatRect                       mWorldBounds;
+        sf::Vector2f                        mSpawnPosition;
+        Snake                               *mPlayerSnake;
+        std::vector<Snake *>                mBodySnake;
+        Bonus                               *mBonus;
 };
 
 #endif // SNAKESFML_WORLD_HPP

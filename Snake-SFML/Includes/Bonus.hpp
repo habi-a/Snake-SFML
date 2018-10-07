@@ -9,22 +9,23 @@
 
 class Bonus : public Entity
 {
-	public:
-		enum Type
-		{
-			Apple
-		};
-	public:
-								Bonus(Type mType, const TextureHolder& textures);
-		virtual unsigned int	getCategory() const;
-		void					teleportBonus(const sf::Vector2u &windowSize, const sf::FloatRect &worldBounds, unsigned int sizeTile);
+    public:
+        enum Type
+        {
+            Apple
+        };
 
-	private:
-		virtual void			drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const;
+    public:
+                                Bonus(Type mType, const TextureHolder& textures);
+        virtual unsigned int    getCategory() const;
+        void                    teleportBonus(const sf::Vector2u &windowSize, const sf::FloatRect &worldBounds, unsigned int sizeTile);
 
-	private:
-		Type					mType;
-		sf::Sprite				mSprite;
-	};
+    private:
+        virtual void            drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const;
+
+    private:
+        Type                    mType;
+        sf::Sprite              mSprite;
+    };
 
 #endif // SNAKESFML_BONUS_SFML

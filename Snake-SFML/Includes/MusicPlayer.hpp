@@ -13,17 +13,17 @@
 
 class MusicPlayer : private sf::NonCopyable
 {
-	public:
-											MusicPlayer();
-		void								play(Musics::ID theme);
-		void								stop();
-		void								setPaused(bool paused);
-		void								setVolume(float volume);
+    public:
+                                            MusicPlayer();
+        void                                play(Musics::ID theme);
+        void                                stop();
+        void                                setPaused(bool paused);
+        void                                setVolume(float volume);
 
-	private:
-		sf::Music							mMusic;
-		std::map<Musics::ID, std::string>	mFilenames;
-		float								mVolume;
+    private:
+        sf::Music                           mMusic;
+        std::map<Musics::ID, std::string>   mFilenames;
+        float                               mVolume;
 };
 
 #endif // SNAKESFML_MUSICPLAYER_HPP

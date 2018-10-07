@@ -3,7 +3,7 @@
 
 
 State::Context::Context(sf::RenderWindow& window, TextureHolder& textures, FontHolder& fonts,
-						Player& player, MusicPlayer& musics, SoundPlayer& sounds)
+                        Player& player, MusicPlayer& musics, SoundPlayer& sounds)
 : window(&window)
 , textures(&textures)
 , fonts(&fonts)
@@ -25,20 +25,20 @@ State::~State()
 
 void State::requestStackPush(States::ID stateID)
 {
-	mStack->pushState(stateID);
+    mStack->pushState(stateID);
 }
 
 void State::requestStackPop()
 {
-	mStack->popState();
+    mStack->popState();
 }
 
 void State::requestStateClear()
 {
-	mStack->clearStates();
+    mStack->clearStates();
 }
 
 State::Context State::getContext() const
 {
-	return mContext;
+    return mContext;
 }

@@ -54,7 +54,7 @@ This is a very basic classic 2D snake game made with the SFML C++ game library.
   ```
    $ make
   ```
- * the exectable `snake-sfmlout should apear. The directory will be created if doesn't exist.
+ * The exectable `snake-sfml.out` should apear.
  * Run and enjoy
 
 

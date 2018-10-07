@@ -8,19 +8,19 @@
 
 Textures::ID toTextureID(Snake::Type type)
 {
-	switch (type)
-	{
-		case Snake::Head:
-			return Textures::HeadSnakeRight;
+    switch (type)
+    {
+        case Snake::Head:
+            return Textures::HeadSnakeRight;
 
-		case Snake::Tail:
-			return Textures::TailSnakeLeft;
+        case Snake::Tail:
+            return Textures::TailSnakeLeft;
 
-		default:
-		case Snake::Body:
-			return Textures::BodySnakeHori;
-	}
-	return Textures::BodySnakeHori;
+        default:
+        case Snake::Body:
+            return Textures::BodySnakeHori;
+    }
+    return Textures::BodySnakeHori;
 }
 
 Snake::Snake(Type type, const TextureHolder& textures)
@@ -32,64 +32,64 @@ Snake::Snake(Type type, const TextureHolder& textures)
 
 sf::Sprite &Snake::getSprite()
 {
-	return mSprite;
+    return mSprite;
 }
 
 const unsigned int Snake::getScore() const
 {
-	return mScore;
+    return mScore;
 }
 
 void Snake::setScore(const unsigned int score)
 {
-	mScore = score;
+    mScore = score;
 }
 
 bool Snake::isChangingDirection() const
 {
-	return mIsChangingDirection;
+    return mIsChangingDirection;
 }
 
 void Snake::setIsChangingDirection(bool isChangingDirection)
 {
-	mIsChangingDirection = isChangingDirection;
+    mIsChangingDirection = isChangingDirection;
 }
 
 void Snake::drawCurrent(sf::RenderTarget& target, sf::RenderStates states) const
 {
-	target.draw(mSprite, states);
+    target.draw(mSprite, states);
 }
 
 unsigned int Snake::getCategory() const
 {
-	switch (mType)
-	{
-		case Head:
-			return Category::PlayerSnake;
+    switch (mType)
+    {
+        case Head:
+            return Category::PlayerSnake;
 
-		default:
-			return Category::BodySnake;
-	}
+        default:
+            return Category::BodySnake;
+    }
 }
 
 void Snake::adaptSnakePosition(unsigned int sizeTile)
 {
-	setPosition((float)Entity::roundPosition(getPosition().x, sizeTile), (float)Entity::roundPosition(getPosition().y, sizeTile));
+    setPosition((float)Entity::roundPosition(getPosition().x, sizeTile), (float)Entity::roundPosition(getPosition().y, sizeTile));
 }
 
 bool Snake::canChangeDirection(Direction current_direction, Direction new_direction)
 {
-	if (new_direction == None)
-		return false;
-	else if (current_direction == None && new_direction == West)
-		return false;
-	else if (current_direction == East && new_direction == West)
-		return false;
-	else if (current_direction == West && new_direction == East)
-		return false;
-	else if (current_direction == North && new_direction == South)
-		return false;
-	else if (current_direction == South && new_direction == North)
-		return false;
-	return true;
+    if (new_direction == None)
+        return false;
+    else if (current_direction == None && new_direction == West)
+        return false;
+    else if (current_direction == East && new_direction == West)
+        return false;
+    else if (current_direction == West && new_direction == East)
+        return false;
+    else if (current_direction == North && new_direction == South)
+        return false;
+    else if (current_direction == South && new_direction == North)
+        return false;
+    return true;
 }

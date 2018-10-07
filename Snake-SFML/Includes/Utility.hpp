@@ -8,8 +8,8 @@
 
 namespace sf
 {
-	class Sprite;
-	class Text;
+    class Sprite;
+    class Text;
 }
 
 // Since std::to_string doesn't work on MinGW we have to implement
